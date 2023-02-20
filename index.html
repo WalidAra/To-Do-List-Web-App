@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/973bac4ae7.css" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="left_bar_icon" id="left_bar_icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="the_date">
+
+            </div>
+
+            <div class="right_bar_icon" id="right_bar_icon">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+        </nav>
+
+        <div class="parent">
+            <div class="tasks_num">
+                <h1>Today <br> <span id="tasks">0 Tasks</span></h1>
+            </div>
+
+            <button id="add_icon">
+                Add note
+            </button>
+        </div>
+
+    </header>
+
+    <section class="field">
+
+        <div id="notes">
+            <!-- <div id="note$" class="note">
+                <div id="note_date">
+                    6/1<br> 00:00:00
+                </div>
+                
+                <div id="content_note">
+                    hello world
+                </div>
+
+                <div id="check_box">
+                    <i class="fa-solid fa-square-check"></i>
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+    <aside id="left_bar" class="active" >
+        <div id="close_left_bar">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <ul>
+            <li id="class1"> <i class="fa-sharp fa-solid fa-exclamation"></i> &nbsp; <span>Important</span> </li>
+            <li id="class2"> <i class="fa-solid fa-briefcase"></i> &nbsp; <span>Work</span> </li>
+            <li id="class3"> <i class="fa-solid fa-shop"></i> &nbsp;  <span>Shop</span> </li>
+            <li id="class4"> <i class="fa-solid fa-medal"></i> &nbsp; <span>Sport</span> </li>
+            <li id="class5"> <i class="fa-solid fa-plane"></i> &nbsp; <span>Travel</span> </li>
+        </ul>
+    </aside>
+
+    <aside id="right_bar" class="active">
+        <div id="close_right_bar">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <ul>
+            <li id="setting1"> <i class="fa-solid fa-user"> &nbsp; </i> <span>Profile</span> </li>
+            <li id="setting2"> <i class="fa-solid fa-paint-roller"></i> &nbsp; <span>Theme</span> </li>
+            <li id="setting3"><i class="fa-solid fa-paintbrush"></i> &nbsp; <span>Color of the app</span> </li>
+            <li id="setting4"><i class="fa-solid fa-star"></i> &nbsp; Rate Us</li>
+        </ul>
+
+    </aside>
+
+    <section id="inputs" class="input_off">
+        <input type="text" placeholder="Enter your note here" id="text" >
+
+        <button type="submit" id="done" >Submit</button>
+    </section>
+
+    <section class="options" class="unactive">
+
+    </section>
+    
+    <script src="script.js" defer ></script>
+    <script src="script2.js" defer ></script>
+    <script src="https://kit.fontawesome.com/973bac4ae7.js" crossorigin="anonymous"></script>
+</body>
+</html>
