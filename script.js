@@ -11,12 +11,12 @@ function CreateNote(text){
     note.classList.add("note");
     
     // date 
-    let date = new Date();
-    let day = date.getDay();
-    let month = date.getMonth();
-    let hour = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
+    const date = new Date();
+    const day = date.getDay();
+    const month = date.getMonth() + 1;
+    const hour = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
 
     let Note_date = document.createElement("div"); //div child 1
     Note_date.id = "note_date";
